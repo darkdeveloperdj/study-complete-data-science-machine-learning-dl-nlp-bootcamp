@@ -1,0 +1,23 @@
+PS D:\Projects\Complete Data Science-Machine Learning-DL-NLP Bootcamp> python --version
+Python 3.13.7
+PS D:\Projects\Complete Data Science-Machine Learning-DL-NLP Bootcamp> conda --version
+conda 25.5.1
+PS D:\Projects\Complete Data Science-Machine Learning-DL-NLP Bootcamp> conda create -p venv python==3.10
+
+
+# To activate this environment, use                                                                                                                             
+#                                                                                                                                                               
+#     $ conda activate D:\Projects\complete-data-science-machine-learning-dl-nlp-bootcamp\venv
+#                                                                                                                                                               
+# To deactivate an active environment, use                                                                                                                      
+#                                                                                                                                                               
+#     $ conda deactivate       
+
+conda activate venv/      
+pip install -r requriments.txt 
+
+(D:\Projects\complete-data-science-machine-learning-dl-nlp-bootcamp\venv) PS D:\Projects\complete-data-science-machine-learning-dl-nlp-bootcamp> pip install ipykernel
+
+
+
+                                                                         
