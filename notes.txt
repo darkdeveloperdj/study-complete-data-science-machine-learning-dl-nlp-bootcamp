@@ -1,23 +1,40 @@
-PS D:\Projects\Complete Data Science-Machine Learning-DL-NLP Bootcamp> python --version
-Python 3.13.7
-PS D:\Projects\Complete Data Science-Machine Learning-DL-NLP Bootcamp> conda --version
-conda 25.5.1
-PS D:\Projects\Complete Data Science-Machine Learning-DL-NLP Bootcamp> conda create -p venv python==3.10
+# ======================================
+# Conda Environment Setup and Commands
+# ======================================
 
+# Create new environment with Python 3.10
+conda create -p venv python==3.10
 
-# To activate this environment, use                                                                                                                             
-#                                                                                                                                                               
-#     $ conda activate D:\Projects\complete-data-science-machine-learning-dl-nlp-bootcamp\venv
-#                                                                                                                                                               
-# To deactivate an active environment, use                                                                                                                      
-#                                                                                                                                                               
-#     $ conda deactivate       
+# Activate the environment (absolute path)
+conda activate D:\Projects\study-complete-data-science-machine-learning-dl-nlp-bootcamp\venv
 
-conda activate venv/      
-pip install -r requriments.txt 
+# OR (relative path)
+conda activate venv/
 
-(D:\Projects\complete-data-science-machine-learning-dl-nlp-bootcamp\venv) PS D:\Projects\complete-data-science-machine-learning-dl-nlp-bootcamp> pip install ipykernel
+# Install required packages from requirements.txt
+pip install -r requirements.txt
+# (Make sure the file name is spelled correctly)
 
+# Install Jupyter kernel
+pip install ipykernel
 
+# ======================================
+# Maintenance & Troubleshooting Commands
+# ======================================
 
-                                                                         
+# Update Conda to the latest version
+conda update -n base -c defaults conda
+
+# Install or upgrade pip manually
+python -m ensurepip --upgrade
+python -m pip install --upgrade pip
+
+# Use Python's -m flag if pip.exe fails
+python -m pip install -r requirements.txt
+
+# Check versions
+python --version
+pip --version
+
+# Deactivate the Conda environment
+conda deactivate
